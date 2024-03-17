@@ -1,5 +1,5 @@
 # CodeForcesWrapper
-Poorly written code purely written for my own usage. Debating with myself to add commands to make it more of a wrapper.
+Hard to understand poorly written code purely written for my own usage. Debating with myself to add commands to make it more of a wrapper.
 
 
 ## UML Diagram
