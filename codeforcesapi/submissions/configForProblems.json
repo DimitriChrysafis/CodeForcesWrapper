@@ -1,0 +1,10 @@
+{
+  "contestId": false,
+  "problemsetName": false,
+  "index": false,
+  "name": true,
+  "type": false,
+  "points": false,
+  "rating": false,
+  "tags": false
+}
