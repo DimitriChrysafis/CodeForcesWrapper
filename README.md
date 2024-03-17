@@ -9,9 +9,8 @@ Poorly written code purely written for my own usage. Debating with myself to add
 Current UML diagram.
 
 ## Sample Output
-
-User Info for benq:
 ```
+User Info for benq:
 +-------------------------+-----------------------+
 | Field                   | Value                 |
 +=========================+=======================+
