@@ -1,4 +1,4 @@
-# CodeForcesWrapper
+# codeforcesKindOfWrapper
 Hard to understand poorly written code purely written for my own usage. Debating with myself to add commands to make it more of a wrapper.
 
 
