@@ -1,0 +1,15 @@
+{
+    "id": true,
+    "contestId": true,
+    "creationTimeSeconds": false,
+    "relativeTimeSeconds": false,
+    "problem": true,
+    "author": false,
+    "programmingLanguage": true,
+    "verdict": true,
+    "testset": false,
+    "passedTestCount": true,
+    "timeConsumedMillis": false,
+    "memoryConsumedBytes": false,
+    "points": false
+}
