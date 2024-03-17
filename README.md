@@ -1,6 +1,9 @@
 # codeforcesKindOfWrapper
 Hard to understand poorly written code purely written for my own usage. Debating with myself to add commands to make it more of a wrapper.
 
+## NOW UPLOADED TO PIP
+```pip install codeforcesKindOfWrapper==1.0.0```
+https://pypi.org/project/codeforcesKindOfWrapper/1.0.0/
 
 ## UML Diagram
 
