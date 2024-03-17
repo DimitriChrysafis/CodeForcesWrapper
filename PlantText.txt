@@ -1,0 +1,92 @@
+@startuml
+
+class customAPI {
+    - base_url: string
+    + RECENTSUBMISSIONS(handle: string, count: int): list
+    + USERINFO(handle: string): dict
+    + CONTESTINFO(contest_id: string): dict
+}
+
+class SubmissionForUser {
+    - read(filename: string): dict
+    - filter(submission: dict, problems_config: dict): dict
+    + getRecent(): void
+}
+
+class ContestInfo {
+    - reading(filename: string): dict
+    - contestGetInfo(api: customAPI, contest_id: string, info_fields: dict): dict
+    + contestInfoing(): void
+}
+
+class InfoForUser {
+    - read(filename: string): dict
+    - GETINFO(api: customAPI, handle: string, info_fields: dict): dict
+    + infoForUsering(): void
+}
+
+class Main {
+    - updateAndReplace(filename: string, key: string, value: string): void
+    + main(): void
+}
+
+class JsonConfig {
+    - load(filename: string): dict
+    - dump(data: dict, filename: string): void
+}
+
+class configForProblemsJson {
+    + load(filename: string): dict
+    + dump(data: dict, filename: string): void
+}
+
+class configForSubmissionsJson extends configForProblemsJson {
+    // Inherits from configForProblemsJson
+}
+
+class configForUserJson {
+    + load(filename: string): dict
+    + dump(data: dict, filename: string): void
+}
+
+class contestInfoJson {
+    + load(filename: string): dict
+    + dump(data: dict, filename: string): void
+}
+
+customAPI "1" --* "1" Main
+customAPI "1" --* "1" SubmissionForUser
+customAPI "1" --* "1" ContestInfo
+customAPI "1" --* "1" InfoForUser
+
+Main "1" --* "1" SubmissionForUser
+Main "1" --* "1" ContestInfo
+Main "1" --* "1" InfoForUser
+
+SubmissionForUser --> customAPI: uses
+ContestInfo --> customAPI: uses
+InfoForUser --> customAPI: uses
+
+Main --> SubmissionForUser: uses
+Main --> ContestInfo: uses
+Main --> InfoForUser: uses
+
+class JsonConfig {
+    + load(filename: string): dict
+    + dump(data: dict, filename: string): void
+}
+
+Main "1" --* "1" JsonConfig
+SubmissionForUser "1" --* "1" JsonConfig
+ContestInfo "1" --* "1" JsonConfig
+InfoForUser "1" --* "1" JsonConfig
+
+Main "1" --* "1" configForSubmissionsJson
+Main "1" --* "1" configForUserJson
+Main "1" --* "1" contestInfoJson
+
+SubmissionForUser "1" --* "1" configForSubmissionsJson
+InfoForUser "1" --* "1" configForUserJson
+ContestInfo "1" --* "1" contestInfoJson
+
+@enduml
