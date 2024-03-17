@@ -22,7 +22,7 @@ def main():
 
     if choice == "1":
         username = input("Enter the username: ")
-        updateAndReplace("submissions/infoForUser.json", "username", username)
+        updateAndReplace("submissions/configForUser.json", "username", username)
         infoForUsering()
     elif choice == "2":
         username = input("Enter the username: ")

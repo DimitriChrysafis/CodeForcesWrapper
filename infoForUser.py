@@ -20,7 +20,7 @@ def GETINFO(api, handle, info_fields):
 
 def infoForUsering():
     api = customAPI()
-    info_config = read("submissions/infoForUser.json")
+    info_config = read("submissions/configForUser.json")
     handle = info_config.get("username")
     info_fields = info_config.get("info_fields", {})
 
