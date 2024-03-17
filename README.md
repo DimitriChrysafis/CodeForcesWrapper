@@ -4,7 +4,7 @@ Poorly written code purely written for my own usage. Debating with myself to add
 
 ## UML Diagram
 
-![UML Diagram](UML/full_uml.png)
+![UML Diagram](UML/full_UML.png)
 
 Current UML diagram.
 
