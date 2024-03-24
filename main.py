@@ -2,7 +2,7 @@ from submissionForUser import getRecent
 from infoForUser import infoForUsering
 from contestInfo import contestInfoing
 import json
-
+ 
 def updateAndReplace(filename, key, value):
     with open(filename, "r+") as f:
         config = json.load(f)
