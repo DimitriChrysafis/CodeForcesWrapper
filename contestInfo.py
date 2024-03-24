@@ -7,7 +7,7 @@ def reading(filename):
     with open(filename, "r") as f:
         config = json.load(f)
     return config
-
+ 
 
 def contestGetInfo(api, contest_id, info_fields):
     contest_info = api.contestGetInfo(contest_id)
